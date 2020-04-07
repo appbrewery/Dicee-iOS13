@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // who.what = value
         diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
         diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+    }
+    
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Button got tapped.")
     }
     
 }
