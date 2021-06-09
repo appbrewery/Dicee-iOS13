@@ -15,8 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         diceImageView1.image = #imageLiteral(resourceName: <#T##String#>)
+    
+    
+
+
+    @IBOutlet weak var diceImageView2: UIImageView!
     }
-
-
 }
 
