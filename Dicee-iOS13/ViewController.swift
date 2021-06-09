@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
 
 
-    @IBOutlet weak var diceImageView2: UIImageView!
+        @IBOutlet weak var DiceImageView2.image: UIImageView!
     }
 }
 
