@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         // so in our case we need to change the image value of the diceImageView1 property to the dice showing six as value when the view/ ui loads up
         
-        diceImageView1.image = UIImage(named: "DiceSix")   // here we are using the UIImage() object and passing the value of named arribute the name of the image that we want to show when the UI / view loads up
+//        diceImageView1.image = UIImage(named: "DiceSix")   // here we are using the UIImage() object and passing the value of named arribute the name of the image that we want to show when the UI / view loads up
         
         
         // the code below is used to change the alpha property of the diceImageView1 to 0.5 to make it transparent
@@ -46,9 +46,27 @@ class ViewController: UIViewController {
         
         
         // the code below is used to change the image of the second dice to DiceTwo image when the view / UI loads up
-        diceImageView2.image = UIImage(named: "DiceTwo") // here we are using the UIImage() object and passing the value of named arribute the name of the image that we want to show when the UI / view loads up
+//        diceImageView2.image = UIImage(named: "DiceTwo") // here we are using the UIImage() object and passing the value of named arribute the name of the image that we want to show when the UI / view loads up
     }
-
+    
+    
+    // the code below is used to generate / create a method for handling the on tap when the user clicks the roll button on the screen
+    
+    // the Method below used the IBAction or the interface builder action
+    // annotation
+    @IBAction func rollButtonOnPressedHandler(_ sender: UIButton) {
+        // the below line of code is for debugging purpose to print
+        // the button got pressed in the debug console when the user
+        // pressed the roll button
+        print("Roll Button Got Pressed")
+        
+        // the code below is used to change the left and the right dice
+        // to show the diceFour when the roll button is pressed
+        diceImageView1.image = UIImage(named: "DiceFour")
+        diceImageView2.image = UIImage(named: "DiceFour")
+        
+    }
+    
 
 }
 
