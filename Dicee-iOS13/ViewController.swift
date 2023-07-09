@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Roll button pressed")
+    }
+    
 }
 
